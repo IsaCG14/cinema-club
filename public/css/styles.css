@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Dancing-Script, sans-serif;
+    src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+  }
+  
+  .lista {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .lista img {
+    width: 155px;
+    margin: 1rem 2rem;
+    cursor: pointer;
+  }
+  
+  .lista img:hover {
+    filter: brightness(80%);
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white;
+  }
+  
+  .container-fluid .navbar-brand {
+    color: rgb(172, 130, 255) !important;
+    font-family: Dancing-Script;
+    font-size: 36px !important;
+  }
+  
+  nav {
+    position: sticky;
+    top: 0;
+  }
+  
+  .navbar {
+    background: #000;
+  }
+  
+  input[type="text"],
+  input[type="file"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  textarea::placeholder,
+  input::placeholder,
+  select {
+    color: rgb(255, 255, 255) !important;
+    background: rgba(42, 42, 42) !important;
+    border-width: 3px !important;
+  }
+  
+  .form-inline input[type="text"],
+  .form-inline select {
+    font-size: 18px;
+    width: 50vw;
+    border-radius: 0% !important;
+    border: none !important;
+    border-bottom: 1px solid white !important;
+  }
