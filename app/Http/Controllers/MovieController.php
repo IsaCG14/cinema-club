@@ -92,6 +92,12 @@ class MovieController extends Controller
         return Redirect::to("/movie");
     }
 
+    public function updateSinopsis(Request $request, $id){
+        $movie = Movie::find($id);
+        $movie->sinopsis = request('sinopsis');
+        $movie->save();
+        return view("editar", ['movie'=>$movie]);
+    }
     /**
      * Remove the specified resource from storage.
      *

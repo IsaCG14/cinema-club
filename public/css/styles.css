@@ -59,3 +59,7 @@
     border: none !important;
     border-bottom: 1px solid white !important;
   }
+
+  .hide {
+    display: none;
+  }

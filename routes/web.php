@@ -22,6 +22,7 @@ Route::controller(MovieController::class)->group(function () {
    Route::get("/", 'index')->name('home');
    Route::get("/create", 'create')->name('create');
    Route::get("/update/{id}", 'edit')->name('update');
+   Route::put('/edits/{id}', 'updateSinopsis')->name('edits');
 });
 
 Route::resource('movie', MovieController::class);

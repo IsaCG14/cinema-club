@@ -65,8 +65,29 @@
         </div>
     </div>
     <h3>Sinopsis</h3>
-    <p>{{ $movie->sinopsis }}</p>
+    <p class="text">{{ $movie->sinopsis }} <i id="edit" class="bi bi-pencil"></i></p>
+    <div class="edit-description hide">
+        {!! Form::model($movie, ['route'=>['edits', $movie->id], "method"=>"PUT", 'class'=>'form-inline'])!!}
+        <textarea name="sinopsis" class="form-control">{{$movie->sinopsis}}</textarea>
+        {!! Form::submit('Editar', ['class'=>'btn btn-primary my-2']) !!}
+        <button class="btn btn-danger mx-2" id="cancel">Cancelar</button>
+        {!! Form::close() !!}
+    </div>
 </div>  
 </div>
 <iframe class="m-4" width="95%" height="550px" src={{asset("files/universal.mp4")}}></iframe>
+<script>
+$(document).ready(function(){
+    
+    $("#edit").click(function(){
+        $(".edit-description").toggleClass('hide')
+        $(".text").toggleClass('hide')
+    })
+
+    $("#cancel").click(function(){
+        $(".edit-description").toggleClass('hide')
+        $(".text").toggleClass('hide')
+    })
+})
+</script>
 @endsection
