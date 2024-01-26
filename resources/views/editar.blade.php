@@ -52,7 +52,8 @@
                         '2' => 'Acción',
                         '3' => 'Fantasia',
                         '4' => 'Sobrenatural',
-                        '5' => 'Terror'
+                        '5' => 'Terror',
+                        '6' => 'Romance'
                     ), $movie->genero_id, ['class'=>'form-select m-3']) !!}
             </div>
         </div>

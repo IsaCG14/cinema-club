@@ -32,7 +32,7 @@
                 <a class="nav-link @if(Route::currentRouteName() == 'home') active @endif" href="{{route('home')}}">Peliculas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link @if(Route::currentRouteName() == 'create') active @endif" href="{{route('create')}}">Estrenos</a>
+                    <a class="nav-link @if(Route::currentRouteName() == 'create') active @endif" href="{{route('create')}}">Nuevo estreno</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link @if(Route::currentRouteName() == 'register') active @endif" href="{{route('register')}}">Registro</a>

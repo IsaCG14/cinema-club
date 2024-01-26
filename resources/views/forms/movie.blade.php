@@ -12,7 +12,8 @@
          '2' => 'Acción',
          '3' => 'Fantasia',
          '4' => 'Sobrenatural',
-         '5' => 'Terror'
+         '5' => 'Terror',
+         '6' => 'Romance'
      ), null, ['class'=>'form-select m-3']) !!}
      <input type="file" class="form-control m-3" name="image">
  </div>  

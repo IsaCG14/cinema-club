@@ -26,6 +26,7 @@ Route::controller(MovieController::class)->group(function () {
 });
 
 Route::resource('movie', MovieController::class);
+Route::resource('log', LogController::class);
 
 Route::controller(LogController::class)->group(function () {
    Route::get("/admin", 'index');

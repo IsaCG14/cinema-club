@@ -31,9 +31,9 @@
         $(".peliculas img").each(function(contador = 0) {
             //Poner su identificador
             $(this).attr("id", pelis[contador].id)
-
+                //Al poner mouse sobre imagen
                 $(this).on("mouseenter", function() {
-                    let genero;
+                    let genero; //Obtener genero
                     switch(pelis[contador].genero_id){
                         case 1: genero = "Aventura";
                         break;
@@ -43,7 +43,9 @@
                         break;
                         case 4: genero = "Sobrenatural";
                         break;
-                        default: genero = "Terror";
+                        case 5: genero = "Terror";
+                        break;
+                        default: genero = "Romance";
                         break;
                     }
 
