@@ -27,7 +27,7 @@ class MovieCreateRequest extends FormRequest
             'direction' => 'required',
             'duration' => 'required',
             'genero_id' => 'required',
-            'image' => 'required'
+            'image' => 'required|mimes:jpg'
         ];
     }
 }
